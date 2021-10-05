@@ -16,6 +16,7 @@ img = cv2.imread( sys.argv[1], cv2.IMREAD_COLOR )
 
 
 # 画像を表示する
+# 第一引数はウインドウ名
 cv2.imshow(’image’, img)
 
 # キー入力を待つ.引数 0 は入力を待ち続ける.10 なら 10 ミリ秒待つ.

@@ -4,6 +4,8 @@ import cv2
 # カメラの準備
 cap = cv2.VideoCapture(0)
 # カメラから画像を読み取り,frame に格納する
+# cap.read()について
+# https://weblabo.oscasierra.net/python/opencv-videocapture-camera.html
 ret, img = cap.read()
 # 画像を表示する
 cv2.imshow(’image’, img)
