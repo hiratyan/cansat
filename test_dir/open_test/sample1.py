@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 # OpenCV2 をインポートして利用できるようにする
+# sudo pip3 install opencv-python
+# pip install numpy --upgrade
 import cv2
 
 # 引数処理のため sys ライブラリをインポート
@@ -17,7 +19,7 @@ img = cv2.imread( sys.argv[1], cv2.IMREAD_COLOR )
 
 # 画像を表示する
 # 第一引数はウインドウ名
-cv2.imshow(’image’, img)
+cv2.imshow('image', img)
 
 # キー入力を待つ.引数 0 は入力を待ち続ける.10 なら 10 ミリ秒待つ.
 cv2.waitKey(0)

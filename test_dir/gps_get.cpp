@@ -1,13 +1,12 @@
-#include <iostream>
+#include <stdio.h>
 #include <wiringPi.h>
 #include <wiringSerial.h>
 #include <termios.h>
-using namespace std;
 
 int main() {
     int fd;
     struct termios ttyparam;
-    fd = serialOpen("/dev/ttyS0", 9600);
+    fd = serialOpen("/dev/ttyAMA0", 9600);
 
     tcgetattr(fd, &ttyparam);
 

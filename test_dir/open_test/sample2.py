@@ -8,7 +8,7 @@ cap = cv2.VideoCapture(0)
 # https://weblabo.oscasierra.net/python/opencv-videocapture-camera.html
 ret, img = cap.read()
 # 画像を表示する
-cv2.imshow(’image’, img)
+cv2.imshow('image', img)
 # キー入力を待つ
 cv2.waitKey(0)
 # デバイスを解放する
