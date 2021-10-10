@@ -5,7 +5,8 @@ import sys
 
 def smooth(i):
     blur_img = cv2.blur(i, (300,300) )
-    cv2.imshow('Original image', blur_img) 
+    cv2.imshow('Original image', blur_img)
+    cv2.imwrite('smosize.jpg', blur_img) 
     cv2.waitKey(0) 
     cv2.destroyAllWindows() 
 
