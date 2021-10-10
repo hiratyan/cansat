@@ -16,7 +16,7 @@ if sys.argv[2] == 'blur':
     blur_img = cv2.blur(img, (int(sys.argv[3]), int(sys.argv[4])))
     cv2.imshow('Original image', img)
     cv2.imshow('Blurred image',blur_img)
-    cv2.imwrite('output.jpg',blur_img)
+    cv2.imwrite('blurred.jpg',blur_img)
     cv2.waitKey(0)
     cv2.destroyAllWindows
 
@@ -26,7 +26,7 @@ elif sys.argv[2] == 'gauss':
     gauss_img = cv2.GaussianBlur(img, (int(sys.argv[3]), int(sys.argv[4])), int(sys.argv[5]))
     cv2.imshow('Original image', img)
     cv2.imshow('Gauss image', gauss_img)
-    cv2.imwrite('output.jpg', gauss_img)
+    cv2.imwrite('gauss.jpg', gauss_img)
     cv2.waitKey(0)
     cv2.destroyAllWindows
 
