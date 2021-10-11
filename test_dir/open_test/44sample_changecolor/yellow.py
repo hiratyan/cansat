@@ -11,7 +11,7 @@ for x in range( img2.shape[0] ):
         g_val = img2[x,y,1] # Green の画素値
         r_val = img2[x,y,2] # Red の画素値
 
-        if ( b_val > 30 ) and ( g_val > 30 ) and ( r_val < 70 ):
+        if ( r_val > 100 ) and ( g_val > 100 ):
             pass
         else:
             val = int(0.299*r_val + 0.587*g_val + 0.114*b_val)
